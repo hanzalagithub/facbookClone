@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 100%;
+}
+
+h1 {
+    color: #1877f2;
+    font-size: 36px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.dob label{
+    font-size: 14px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.gender {
+    margin: 10px 0;
+    
+}
+
+
+select,
+input[type="radio"] {
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background-color: #42b72a;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #36a420;
+}
+
+
+
+.gendername {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+p a {
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

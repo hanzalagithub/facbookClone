@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Sign-Up Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>facebook</h1>
+        <h2>Create a new account</h2>
+        <p>It's quick and easy.</p>
+        <form id="signup-form">
+            <input type="text" id="first-name" placeholder="First name" required>
+            <input type="text" id="surname" placeholder="Surname" required>
+            <input type="email" id="email" placeholder="Mobile number or email address" required>
+            <input type="password" id="password" placeholder="New password" required>
+            <div class="dob">
+                <label>Date of birth</label>
+                <select id="day" name="day" title="Day"></select>
+                <select id="month" name="month" title="Month"></select>
+                <select id="year" name="year" title="Year"></select>
+            </div>
+            
+            <div class="gender">
+                <label class="gendername">Gender</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="custom" name="gender" value="Custom">
+                <label for="custom">Custom</label>
+            </div>
+            <button type="button" onclick="generatePDF()">Sign Up</button>
+        </form>
+        <p><a href="#">Already have an account?</a></p>
+    </div>
+
+    <!-- Include jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
